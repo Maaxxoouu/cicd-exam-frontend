@@ -1,0 +1,167 @@
+/* Header Styles */
+.App-header {
+  background-color: #1e88e5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Kanban Board Styles */
+.kanban {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.kanban-column {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kanban-column h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 2px solid #1e88e5;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Task Styles */
+.kanban-task {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.kanban-task:hover {
+  transform: scale(1.02);
+}
+
+.kanban-task h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.kanban-task p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button Styles */
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.task-actions button {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-actions button:hover:not(:disabled) {
+  background-color: #1565c0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.task-actions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kanban {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .kanban-column {
+      width: 90%;
+  }
+}
+
+/* Task Form Styles */
+.task-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-form h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.task-form .form-field {
+    margin-bottom: 15px;
+}
+
+.task-form .form-field label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.task-form .form-field input,
+.task-form .form-field textarea,
+.task-form .form-field select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.task-form button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #1565c0;
+}
