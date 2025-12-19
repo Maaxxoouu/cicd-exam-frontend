@@ -1,6 +1,12 @@
 # fisa2-cicd-tpfinal-frontend
 ### Best Maxime
 
+## github
+
+Après avoir eu des problèmes avec gitlab (connexion au VPS & cache docker plein qui entraîne des erreurs sur la pipeline) j'ai continué le projet sur github :
+- pour le front : https://github.com/Maaxxoouu/cicd-exam-frontend
+- pour le back : https://github.com/Maaxxoouu/cicd-exam-backend
+
 ## Application
 
 L'application se trouve sur un VPS. On peut l'utiliser à l'adresse https://maximebest.sundew.fr/cicd/
